@@ -1,0 +1,21 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Portfolio Theme",
+    "type": "project",
+    "minimum-stability": "dev",
+    "authors": [{
+  		"name": ""
+  	}],
+  	"repositories": [{
+  		"type": "composer",
+  		"url": "https://packages.drupal.org/8"
+  	}],
+  	"require": {
+  		"drupal/bootstrap_barrio": "^4.21"
+  	},
+  	"extra": {
+  		"installer-paths": {
+  			"themes/contrib/{$name}": ["type:drupal-theme"]
+  		}
+  	}
+}

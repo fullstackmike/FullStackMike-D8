@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Portfolio theme.
+
+portfolio.settings:
+  type: theme_settings
+  label: 'Portfolio settings'

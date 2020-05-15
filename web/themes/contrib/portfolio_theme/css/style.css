@@ -1,0 +1,40 @@
+/**
+ * @file
+ * Subtheme specific CSS.*/
+.footer_color
+{
+text-align: center;
+border: none;
+ 
+}
+.view_padding
+{
+padding: 30px;
+}
+.header_font
+{
+font-family: 'Montserrat', sans-serif;
+color: #FFFFFF
+}
+.content_items
+{
+font-family: 'Montserrat', sans-serif;
+font-size: 23px;
+}
+.sidebar_items
+{
+border: none;
+border-color: #FFFFFF;
+}
+.breadcrumb_items
+img:hover {
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+.breadcrumb_items img{
+	width: 100%;
+ }
+ #block-portfolio-page-title .content h1{
+	 text-align: center;
+ }
+
