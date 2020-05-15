@@ -1,5 +1,5 @@
 .idea
 .DS_Store
 settings.php
-*/files/*
+web/sites/default/files/*
 vendor/*
