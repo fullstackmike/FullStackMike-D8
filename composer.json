@@ -24,7 +24,8 @@
         "drupal/core-recommended": "^8.8",
         "drupal/features": "^3.8",
         "drupal/glazed_helper": "^1.5",
-        "drupal/portfolio_theme": "^5.0"
+        "drupal/portfolio_theme": "^5.0",
+        "drupal/webform": "^6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
