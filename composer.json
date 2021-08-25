@@ -25,7 +25,8 @@
         "drupal/features": "^3.8",
         "drupal/glazed_helper": "^1.5",
         "drupal/portfolio_theme": "^5.0",
-        "drupal/webform": "^5.0"
+        "drupal/webform": "^6.0",
+        "drupal/webform_ui": "^6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
