@@ -6,9 +6,24 @@ use Symfony\Component\HttpFoundation\Request;
 function class_schedule_mods_form_webform_submission_class_course_signup_node_3_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
     foreach (array_keys($form['actions']) as $action) {
         $form['actions']['submit']['#submit'][] = 'class_schedule_mods_form_submit';
+        $form['actions']['submit']['#validate'][] = 'class_schedule_mods_form_validate';
     }
 }
 
+function class_schedule_mods_form_validate(array $form, FormStateInterface $form_state){
+  $fields = ['Algebra','Trigonometry','Calculus','Chemistry','Biology','Art History','Painting','Drawing','Literature','Grammar'];
+  foreach ($fields AS $string) {
+    $time_value = $form_state->getValue($string.'_class_timeslots');
+    if (!empty($time_value)) {
+      $form_state->setValue('time_order_value', $time_value);
+      $form_state->setValue('topic_grouping_value', $string);
+    }
+  }
+}
+
 function class_schedule_mods_form_submit(array $form, FormStateInterface $form_state){
-    \Drupal::service('messenger')->addMessage("Yay, we now have a form override for a webform!");
+  $sid = (int) $form_state->getFormObject()->getEntity()->id();
+  $webform_submission = \Drupal\webform\Entity\WebformSubmission::load($sid);
+  $data = $webform_submission->getData();
+  \Drupal::service('messenger')->addMessage("Your form was successful. Please review your schedule below the form.");
 }
