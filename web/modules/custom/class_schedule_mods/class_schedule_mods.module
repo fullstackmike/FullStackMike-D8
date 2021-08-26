@@ -3,7 +3,7 @@
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-function class_schedule_mods_form_class_course_signup_alter(&$form, FormStateInterface $form_state, $form_id) {
+function class_schedule_mods_form_webform_submission_class_course_signup_alter(&$form, FormStateInterface $form_state, $form_id) {
     foreach (array_keys($form['actions']) as $action) {
         $form['actions']['submit']['#submit'][] = 'class_schedule_mods_form_submit';
     }
