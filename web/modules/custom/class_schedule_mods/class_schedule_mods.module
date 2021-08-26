@@ -13,10 +13,11 @@ function class_schedule_mods_form_webform_submission_class_course_signup_node_3_
 function class_schedule_mods_form_validate(array $form, FormStateInterface $form_state){
   $fields = ['Algebra','Trigonometry','Calculus','Chemistry','Biology','Art History','Painting','Drawing','Literature','Grammar'];
   foreach ($fields AS $string) {
-    $time_value = $form_state->getValue($string.'_class_timeslots');
+    $time_value = $form_state->getValue(strtolower($string).'_class_timeslots');
     if (!empty($time_value)) {
       $form_state->setValue('time_order_value', $time_value);
       $form_state->setValue('topic_grouping_value', $string);
+      $form_state->setValue('sort_order_value', $time_value);
     }
   }
 }
