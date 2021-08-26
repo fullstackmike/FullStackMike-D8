@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61c1f4421594bf89c2514da7cb75e1d0",
+    "content-hash": "7656047519bb489f0707c30814ef5203",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3732,6 +3732,58 @@
             "homepage": "https://drupal.org/project/views_field_formatter",
             "support": {
                 "source": "https://git.drupalcode.org/project/views_field_formatter"
+            }
+        },
+        {
+            "name": "drupal/views_natural_sort",
+            "version": "2.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_natural_sort.git",
+                "reference": "8.x-2.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_natural_sort-8.x-2.0-alpha5.zip",
+                "reference": "8.x-2.0-alpha5",
+                "shasum": "9e64862130b239259da83559f3dbecfafb7d7384"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-alpha5",
+                    "datestamp": "1607956673",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "generalredneck",
+                    "homepage": "https://www.drupal.org/user/368854"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
+                }
+            ],
+            "description": "Sort results naturaly on a node's title skipping articles like \"the\" and \"a.\"",
+            "homepage": "https://www.drupal.org/project/views_natural_sort",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_natural_sort"
             }
         },
         {
@@ -8221,6 +8273,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/views_natural_sort": 15,
         "drupal/webform_views": 15
     },
     "prefer-stable": true,
