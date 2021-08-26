@@ -1,0 +1,9 @@
+name: 'Class Schedule Mods'
+description: 'To make the Class Scheduler Work, we need some modifications'
+type: module
+core: 8.x
+dependencies:
+  - webform
+  - views
+version: 8.x-1.0
+package: TAG
